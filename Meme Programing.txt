@@ -1,0 +1,7 @@
+TIPS PENTING KEAMANAN AKUN
+.
+Salah satu trik populer dalam dunia Siber untuk membobol sebuah akun adalah dengan menggunakan teknik Bruteforce atau mencoba kombinasi password secara bertubi-tubi. Dengan bantuan software canggih, password atau sandi seseorang dapat dipecahkan biasanya dalam waktu seminggu atau lebih.
+
+Untuk mencegahnya, ada baiknya anda menggunakan password dengan kombinasi angka dan simbol sehingga menyulitkan robot software untuk memecahkan password Anda. Sehingga akun Anda menjadi lebih aman dan terhindar dari segala jenis pembobolan.
+
+Password dengan simbol biasanya digunakan untuk akun level administrasi atau moderator suatu website. Karena lebih aman dan tidak mudah ditebak oleh robot bruteforce. Contoh passwordnya misalnya g3@f!so]s. Perpaduan antara angka, simbol, dan huruf menyulitkan software bruteforce untuk menyamakan password anda dari wordlist sehingga mungkin membutuhkan waktu bertahun-tahun untuk memecahkan password Anda.
