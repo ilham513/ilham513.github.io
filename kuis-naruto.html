@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kuis Naruto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Kuis Naruto</a>
+    </nav>
+    <main>
+      <div class="jumbotron p-4 m-5" style="font-size:24px">
+		<div id="tar">
+		
+		<h2>Siapa nama guru Naruto saat masih di Akademi Ninja?</h2>
+		
+		  <input type="radio" name="s1" value="1"> Iruka <br/>
+		  <input type="radio" name="s1" value="0"> Hatake Kakashi <br/>
+		  <input type="radio" name="s1" value="0"> Jiraiya <br/>
+		  <input type="radio" name="s1" value="0"> Namikaze Minato <br/>
+		<hr/>
+		
+		
+		<h2>Saat ujian chunin yang pertama, siapa genin yang berhasil lulus menjadi chunin ?</h2>
+		
+		  <input type="radio" name="s2" value="0"> Uzumaki Naruto		<br/>
+		  <input type="radio" name="s2" value="0"> Hyuga Neji    		<br/>
+		  <input type="radio" name="s2" value="5"> Nara Shikamaru		<br/>
+		  <input type="radio" name="s2" value="0"> Uchiha Sasuke 		<br/>
+		<hr/>
+		
+		<h2>Apa arti dari jurus Katon Goukakyu no Jutsu ?</h2>
+		
+		  <input type="radio" name="s3" value="1"> Jurus Bola Api Raksasa	<br/>
+		  <input type="radio" name="s3" value="0"> Jurus Bola Api	<br/>
+		  <input type="radio" name="s3" value="0"> Jurus Api Neraka	<br/>
+		  <input type="radio" name="s3" value="0"> Jurus Naga Api	<br/>
+		<hr/>
+		
+		<h2>Siapa nama adik dari Uchiha Madara ?</h2>
+		
+		  <input type="radio" name="s4" value="0">  Uchiha Kagami   	<br/>
+		  <input type="radio" name="s4" value="0">  Uchiha Inabi   	<br/>
+		  <input type="radio" name="s4" value="0">  Uchiha Yashiro   	<br/>
+		  <input type="radio" name="s4" value="1">  Uchiha Izuna   	<br/>
+		<hr/>
+		
+		<h2>Ada berapa jumlah anggota Akatsuki secara keseluruhan ?</h2>
+		
+		  <input type="radio" name="s5" value="0"> 7		<br/>
+		  <input type="radio" name="s5" value="0"> 14    	<br/>
+		  <input type="radio" name="s5" value="5"> 19		<br/>
+		  <input type="radio" name="s5" value="0"> 69 *lol		<br/>
+		<hr/>
+		
+		
+		<button type="button" onclick="fin()" class="btn btn-block btn-primary btn-lg" id="myBtn">Selesai</button>
+		</div>
+      </div>
+    <footer class="container-fluid">
+        <p class="text-muted">&copy; Ilham513.</p>
+    </footer> 
+    </main>
+		
+	
+	<script>
+//$(document).ready(function(){
+//    $("#myBtn").click(function(){
+//		var total = 0;
+//        var str = $("input[type=radio]:checked").val();
+//        if()		
+//    });
+//});
+
+function fin(){
+	var array = []
+	var skor = 0
+	var checkboxes = document.querySelectorAll('input[type=radio]:checked')
+
+	for (var i = 0; i < checkboxes.length; i++) {
+	  //array.push(checkboxes[i].value)
+	  //skor += checkboxes[i].value
+	  if(checkboxes[i].value != 0){ // 1 dan 0 lohooo!!!
+		skor++
+	  }
+	}
+	
+	skor *= 20
+
+	//alert(skor);
+	//$( ".body" ).remove();
+	//document.write("Selamat! Skor Anda "+skor+" <a href=\"\">| Coba Lagi</a>");
+	$( "#tar" ).replaceWith("Selamat! Skor Anda "+skor+" | <a href=\"whatsapp://send?text=Hore! Saya Mendapatkan Skor "+skor+" Dalam Kuis Naruto Online. Ayo Cobain Kuisnya di s.id/coba\">Share ke Whatsapp</a> | <a href=\"\">Coba Lagi</a>");
+}
+	</script>
+	
+
+  </body>
+
+</html>
