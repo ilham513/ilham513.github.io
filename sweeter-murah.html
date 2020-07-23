@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<title>Distro Sweeter Murah</title>
+<title>Sweeter Murah</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,6 +9,22 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-quarter img{margin-bottom: -6px; cursor: pointer}
 .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.img-bottom-right {
+  position: absolute;
+  bottom: 8px;
+  padding: 4px;
+  right: 16px;
+  color: green;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -31,28 +46,69 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
   
   <!-- Photo grid -->
-  <div class="w3-row w3-grayscale-min">
+  <div class="w3-row">
+  
     <div class="w3-quarter">
-      <img src="https://ilham513.github.io/prom/SW01.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW02.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW03.jpg" style="width:100%" onclick="onClick(this)">
+		<div class="img-container">
+		  <img src="https://ilham513.github.io/prom/SW01.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 175.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/o-man-navy-3-1.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 175.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/o-man-abu-tua-2-1.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 175.000</div>
+		</div>
    </div>
+   
     <div class="w3-quarter">
-      <img src="https://ilham513.github.io/prom/SW02.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW01.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW03.jpg" style="width:100%" onclick="onClick(this)">
+		<div class="img-container">
+		  <img src="https://ilham513.github.io/prom/SW02.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 180.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/vest-abu-tua-4-1-2.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 180.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/vest-marun-3-1.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 180.000</div>
+		</div>
    </div>
+   
     <div class="w3-quarter">
-      <img src="https://ilham513.github.io/prom/SW02.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW03.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW01.jpg" style="width:100%" onclick="onClick(this)">
+		<div class="img-container">
+		  <img src="https://ilham513.github.io/prom/SW03.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 170.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/cardigan-choco-3.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 170.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/cardigan-navy2.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 170.000</div>
+		</div>
    </div>
-    <div class="w3-quarter">
-      <img src="https://ilham513.github.io/prom/SW01.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW03.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="https://ilham513.github.io/prom/SW02.jpg" style="width:100%" onclick="onClick(this)">
+   
+   <div class="w3-quarter">
+		<div class="img-container">
+		  <img src="https://ilham513.github.io/prom/SW01.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 175.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/o-man-navy-3-1.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 175.000</div>
+		</div>
+		<div class="img-container">
+		  <img src="https://www.gomuda.co/wp-content/uploads/2020/05/o-man-abu-tua-2-1.jpg" style="width:100%" onclick="onClick(this)">
+		  <div class="img-bottom-right">RP 175.000</div>
+		</div>
    </div>
-    
+
+   
   </div>
 
   <!-- Pagination -->
@@ -69,7 +125,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> | &copy ilham513</div>
 
 <!-- End page content -->
 </div>
